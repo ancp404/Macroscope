@@ -1,5 +1,6 @@
 <x-app-layout>
 
+    <div class="container  mt-6">
             <div class="d-flex align-items-center">
                 <h1 class="fs-1 fw-bold w-100">Our Articles</h1>
                 
@@ -33,4 +34,5 @@
 
             {{$artikels->links()}}
 
+        </div>
 </x-app-layout>

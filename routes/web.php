@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\ArtikelController;
+Use App\Http\Controllers\WebinarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('artikel/edit/{artikel:id}', [ArtikelController::class, 'destroy'])->name('artikel.destroy');
     Route::get('artikel', [ArtikelController::class, 'index'])->name('artikel');
     Route::get('artikel/{artikel:id}', [ArtikelController::class, 'show']);
+    
+    Route::get('webinar/edit/{webinar:id}', [WebinarController::class, 'edit'])->name('webinar.edit');
+    Route::put('webinar/edit/{webinar:id}', [WebinarController::class, 'update'])->name('webinar.update');
+    Route::delete('webinar/edit/{webinar:id}', [WebinarController::class, 'destroy'])->name('webinar.destroy');
+    Route::post('webinar/insert', [WebinarController::class, 'store'])->name('webinar.store');
+    Route::get('webinar/insert', [WebinarController::class, 'insert'])->name('webinar.insert');
+    Route::get('webinar', [WebinarController::class, 'index'])->name('webinar');
+    
     
 });
 

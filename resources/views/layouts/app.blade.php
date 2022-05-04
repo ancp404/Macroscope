@@ -18,10 +18,10 @@
     </head>
     <body class="font-sans antialiased">
         @include('layouts.navigation')
-        <div class="container  mt-6">
+        
             <main>
                 {{ $slot }}
             </main>
-        </div>
+        
     </body>
 </html>

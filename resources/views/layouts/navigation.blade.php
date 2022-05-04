@@ -112,7 +112,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Webinar</a>
+                    <a class="nav-link" href="{{route('webinar')}}">Webinar</a>
                 </li>
             </ul>
         </div>

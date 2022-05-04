@@ -1,6 +1,7 @@
 <x-app-layout>
 
-    <h4><a href="{{route('artikel')}}" style="text-decoration: none; color: black">< Back</a></h4>
+    <div class="container  mt-6">
+        <h4><a href="{{route('artikel')}}" style="text-decoration: none; color: black">< Back</a></h4>
 
     <div class="container d-flex flex-column justify-content-center mt-5" style="width: 75%">
         @if(session()->has('success'))
@@ -43,11 +44,15 @@
             @enderror
         </div>
 
-        <button type="submit" class="btn btn-dark">Insert</button>
+        <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn btn-dark w-100">Insert</button>
+        </div>
     </form>
             </div>
         </div>
     
     </div>
+    </div>
+    
 
 </x-app-layout>
