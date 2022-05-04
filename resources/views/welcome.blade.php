@@ -1,4 +1,11 @@
 <x-guest-layout>
+    @auth
+    @if(session()->has('success'))
+            <div class="alert alert-success" role="alert">
+                {{session()->get('success')}}
+            </div>
+    @endif
+    @endauth
     <div class="jumbotron">
         <div class="box">
             <h1 class="display-4 fw-bold">Macroscope</h1>
